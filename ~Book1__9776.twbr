@@ -1,0 +1,2409 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.23.1017.0948                               -->
+<workbook original-version='18.1' source-build='2023.3.0 (20233.23.1017.0948)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelRelationshipPerfOptions.true...ObjectModelRelationshipPerfOptions />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Trips_Gold_data (BikeShareDB)' inline='true' name='federated.01zw1ae006zsyy12k2x9l0cx1eeb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='mongodb.1mjb27a0e7yz8v1eg88tq13jip0b'>
+            <connection class='mongodb' dbname='BikeShareDB' one-time-sql='' port='3307' server='localhost' source-charset='' username='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='mongodb.1mjb27a0e7yz8v1eg88tq13jip0b' name='Trips' table='[Trips]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='mongodb.1mjb27a0e7yz8v1eg88tq13jip0b' name='Trips' table='[Trips]' type='table' />
+          <relation connection='mongodb.1mjb27a0e7yz8v1eg88tq13jip0b' name='Trips_Gold_data' table='[Trips_Gold_data]' type='table' />
+          <relation connection='mongodb.1mjb27a0e7yz8v1eg88tq13jip0b' name='Trips_Silver' table='[Trips_Silver]' type='table' />
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Bike ID (Trips_Silver)]' value='[Trips_Silver].[Bike ID]' />
+          <map key='[Bike ID]' value='[Trips].[Bike ID]' />
+          <map key='[Birth Year (Trips_Silver)]' value='[Trips_Silver].[Birth Year]' />
+          <map key='[Birth Year]' value='[Trips].[Birth Year]' />
+          <map key='[End Station ID (Trips_Silver)]' value='[Trips_Silver].[End Station ID]' />
+          <map key='[End Station ID]' value='[Trips].[End Station ID]' />
+          <map key='[End Station Latitude (Trips_Silver)]' value='[Trips_Silver].[End Station Latitude]' />
+          <map key='[End Station Latitude]' value='[Trips].[End Station Latitude]' />
+          <map key='[End Station Longitude (Trips_Silver)]' value='[Trips_Silver].[End Station Longitude]' />
+          <map key='[End Station Longitude]' value='[Trips].[End Station Longitude]' />
+          <map key='[End Station Name (Trips_Silver)]' value='[Trips_Silver].[End Station Name]' />
+          <map key='[End Station Name]' value='[Trips].[End Station Name]' />
+          <map key='[Gender (Trips_Silver)]' value='[Trips_Silver].[Gender]' />
+          <map key='[Gender]' value='[Trips].[Gender]' />
+          <map key='[Start Station ID (Trips_Silver)]' value='[Trips_Silver].[Start Station ID]' />
+          <map key='[Start Station ID]' value='[Trips].[Start Station ID]' />
+          <map key='[Start Station Latitude (Trips_Silver)]' value='[Trips_Silver].[Start Station Latitude]' />
+          <map key='[Start Station Latitude]' value='[Trips].[Start Station Latitude]' />
+          <map key='[Start Station Longitude (Trips_Silver)]' value='[Trips_Silver].[Start Station Longitude]' />
+          <map key='[Start Station Longitude]' value='[Trips].[Start Station Longitude]' />
+          <map key='[Start Station Name (Trips_Silver)]' value='[Trips_Silver].[Start Station Name]' />
+          <map key='[Start Station Name]' value='[Trips].[Start Station Name]' />
+          <map key='[Start Time (Trips_Silver)]' value='[Trips_Silver].[Start Time]' />
+          <map key='[Start Time]' value='[Trips].[Start Time]' />
+          <map key='[Stop Time (Trips_Silver)]' value='[Trips_Silver].[Stop Time]' />
+          <map key='[Stop Time]' value='[Trips].[Stop Time]' />
+          <map key='[Trip Duration (Trips_Silver)]' value='[Trips_Silver].[Trip Duration]' />
+          <map key='[Trip Duration]' value='[Trips].[Trip Duration]' />
+          <map key='[Trip_Duration_in_min (Trips_Silver)]' value='[Trips_Silver].[Trip_Duration_in_min]' />
+          <map key='[Trip_Duration_in_min]' value='[Trips].[Trip_Duration_in_min]' />
+          <map key='[Unnamed: 0 (Trips_Silver)]' value='[Trips_Silver].[Unnamed: 0]' />
+          <map key='[Unnamed: 0]' value='[Trips].[Unnamed: 0]' />
+          <map key='[User Type (Trips_Silver)]' value='[Trips_Silver].[User Type]' />
+          <map key='[User Type]' value='[Trips].[User Type]' />
+          <map key='[_id (Trips_Gold_data)]' value='[Trips_Gold_data].[_id]' />
+          <map key='[_id (Trips_Silver)]' value='[Trips_Silver].[_id]' />
+          <map key='[_id]' value='[Trips].[_id]' />
+          <map key='[data.Avg Duration (min)]' value='[Trips_Gold_data].[data.Avg Duration (min)]' />
+          <map key='[data.Bike ID]' value='[Trips_Gold_data].[data.Bike ID]' />
+          <map key='[data.Date]' value='[Trips_Gold_data].[data.Date]' />
+          <map key='[data.Day of Week]' value='[Trips_Gold_data].[data.Day of Week]' />
+          <map key='[data.End Station Name]' value='[Trips_Gold_data].[data.End Station Name]' />
+          <map key='[data.Gender]' value='[Trips_Gold_data].[data.Gender]' />
+          <map key='[data.Start Station Name]' value='[Trips_Gold_data].[data.Start Station Name]' />
+          <map key='[data.Start Time]' value='[Trips_Gold_data].[data.Start Time]' />
+          <map key='[data.Station Name]' value='[Trips_Gold_data].[data.Station Name]' />
+          <map key='[data.Total Trips]' value='[Trips_Gold_data].[data.Total Trips]' />
+          <map key='[data.Trip Count]' value='[Trips_Gold_data].[data.Trip Count]' />
+          <map key='[data.Trip Duration]' value='[Trips_Gold_data].[data.Trip Duration]' />
+          <map key='[data.User Type]' value='[Trips_Gold_data].[data.User Type]' />
+          <map key='[data_idx]' value='[Trips_Gold_data].[data_idx]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[_id]</local-name>
+            <parent-name>[Trips]</parent-name>
+            <remote-alias>_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>21845</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_EFCC27DA41EA4973BF784175449FED8A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bike ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Bike ID]</local-name>
+            <parent-name>[Trips]</parent-name>
+            <remote-alias>Bike ID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_EFCC27DA41EA4973BF784175449FED8A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Birth Year</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Birth Year]</local-name>
+            <parent-name>[Trips]</parent-name>
+            <remote-alias>Birth Year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_EFCC27DA41EA4973BF784175449FED8A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>End Station ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[End Station ID]</local-name>
+            <parent-name>[Trips]</parent-name>
+            <remote-alias>End Station ID</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_EFCC27DA41EA4973BF784175449FED8A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>End Station Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[End Station Latitude]</local-name>
+            <parent-name>[Trips]</parent-name>
+            <remote-alias>End Station Latitude</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_EFCC27DA41EA4973BF784175449FED8A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>End Station Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[End Station Longitude]</local-name>
+            <parent-name>[Trips]</parent-name>
+            <remote-alias>End Station Longitude</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_EFCC27DA41EA4973BF784175449FED8A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>End Station Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[End Station Name]</local-name>
+            <parent-name>[Trips]</parent-name>
+            <remote-alias>End Station Name</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>21845</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_EFCC27DA41EA4973BF784175449FED8A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[Trips]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_EFCC27DA41EA4973BF784175449FED8A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Start Station ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Start Station ID]</local-name>
+            <parent-name>[Trips]</parent-name>
+            <remote-alias>Start Station ID</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_EFCC27DA41EA4973BF784175449FED8A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Start Station Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Start Station Latitude]</local-name>
+            <parent-name>[Trips]</parent-name>
+            <remote-alias>Start Station Latitude</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_EFCC27DA41EA4973BF784175449FED8A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Start Station Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Start Station Longitude]</local-name>
+            <parent-name>[Trips]</parent-name>
+            <remote-alias>Start Station Longitude</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_EFCC27DA41EA4973BF784175449FED8A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Start Station Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Start Station Name]</local-name>
+            <parent-name>[Trips]</parent-name>
+            <remote-alias>Start Station Name</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>21845</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_EFCC27DA41EA4973BF784175449FED8A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Start Time</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Start Time]</local-name>
+            <parent-name>[Trips]</parent-name>
+            <remote-alias>Start Time</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>21845</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_EFCC27DA41EA4973BF784175449FED8A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stop Time</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Stop Time]</local-name>
+            <parent-name>[Trips]</parent-name>
+            <remote-alias>Stop Time</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>21845</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_EFCC27DA41EA4973BF784175449FED8A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Trip Duration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Trip Duration]</local-name>
+            <parent-name>[Trips]</parent-name>
+            <remote-alias>Trip Duration</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_EFCC27DA41EA4973BF784175449FED8A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Trip_Duration_in_min</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Trip_Duration_in_min]</local-name>
+            <parent-name>[Trips]</parent-name>
+            <remote-alias>Trip_Duration_in_min</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_EFCC27DA41EA4973BF784175449FED8A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unnamed: 0</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Unnamed: 0]</local-name>
+            <parent-name>[Trips]</parent-name>
+            <remote-alias>Unnamed: 0</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_EFCC27DA41EA4973BF784175449FED8A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>User Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[User Type]</local-name>
+            <parent-name>[Trips]</parent-name>
+            <remote-alias>User Type</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>21845</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_EFCC27DA41EA4973BF784175449FED8A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[_id (Trips_Gold_data)]</local-name>
+            <parent-name>[Trips_Gold_data]</parent-name>
+            <remote-alias>_id</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>21845</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Gold_data_9DDE460B154A4259B5D63A52A71FB0A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Avg Duration (min)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[data.Avg Duration (min)]</local-name>
+            <parent-name>[Trips_Gold_data]</parent-name>
+            <remote-alias>data.Avg Duration (min)</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Gold_data_9DDE460B154A4259B5D63A52A71FB0A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Bike ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[data.Bike ID]</local-name>
+            <parent-name>[Trips_Gold_data]</parent-name>
+            <remote-alias>data.Bike ID</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Gold_data_9DDE460B154A4259B5D63A52A71FB0A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[data.Date]</local-name>
+            <parent-name>[Trips_Gold_data]</parent-name>
+            <remote-alias>data.Date</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Gold_data_9DDE460B154A4259B5D63A52A71FB0A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Day of Week</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[data.Day of Week]</local-name>
+            <parent-name>[Trips_Gold_data]</parent-name>
+            <remote-alias>data.Day of Week</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>21845</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Gold_data_9DDE460B154A4259B5D63A52A71FB0A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.End Station Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[data.End Station Name]</local-name>
+            <parent-name>[Trips_Gold_data]</parent-name>
+            <remote-alias>data.End Station Name</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>21845</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Gold_data_9DDE460B154A4259B5D63A52A71FB0A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Gender</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[data.Gender]</local-name>
+            <parent-name>[Trips_Gold_data]</parent-name>
+            <remote-alias>data.Gender</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Gold_data_9DDE460B154A4259B5D63A52A71FB0A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Start Station Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[data.Start Station Name]</local-name>
+            <parent-name>[Trips_Gold_data]</parent-name>
+            <remote-alias>data.Start Station Name</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>21845</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Gold_data_9DDE460B154A4259B5D63A52A71FB0A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Start Time</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[data.Start Time]</local-name>
+            <parent-name>[Trips_Gold_data]</parent-name>
+            <remote-alias>data.Start Time</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Gold_data_9DDE460B154A4259B5D63A52A71FB0A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Station Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[data.Station Name]</local-name>
+            <parent-name>[Trips_Gold_data]</parent-name>
+            <remote-alias>data.Station Name</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>21845</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Gold_data_9DDE460B154A4259B5D63A52A71FB0A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Total Trips</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[data.Total Trips]</local-name>
+            <parent-name>[Trips_Gold_data]</parent-name>
+            <remote-alias>data.Total Trips</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Gold_data_9DDE460B154A4259B5D63A52A71FB0A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Trip Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[data.Trip Count]</local-name>
+            <parent-name>[Trips_Gold_data]</parent-name>
+            <remote-alias>data.Trip Count</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Gold_data_9DDE460B154A4259B5D63A52A71FB0A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.Trip Duration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[data.Trip Duration]</local-name>
+            <parent-name>[Trips_Gold_data]</parent-name>
+            <remote-alias>data.Trip Duration</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Gold_data_9DDE460B154A4259B5D63A52A71FB0A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.User Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[data.User Type]</local-name>
+            <parent-name>[Trips_Gold_data]</parent-name>
+            <remote-alias>data.User Type</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>21845</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Gold_data_9DDE460B154A4259B5D63A52A71FB0A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data_idx</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[data_idx]</local-name>
+            <parent-name>[Trips_Gold_data]</parent-name>
+            <remote-alias>data_idx</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Gold_data_9DDE460B154A4259B5D63A52A71FB0A2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[_id (Trips_Silver)]</local-name>
+            <parent-name>[Trips_Silver]</parent-name>
+            <remote-alias>_id</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>21845</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Silver_E6EE7B2649E049A188934312FC545A66]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bike ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Bike ID (Trips_Silver)]</local-name>
+            <parent-name>[Trips_Silver]</parent-name>
+            <remote-alias>Bike ID</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Silver_E6EE7B2649E049A188934312FC545A66]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Birth Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Birth Year (Trips_Silver)]</local-name>
+            <parent-name>[Trips_Silver]</parent-name>
+            <remote-alias>Birth Year</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Silver_E6EE7B2649E049A188934312FC545A66]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>End Station ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[End Station ID (Trips_Silver)]</local-name>
+            <parent-name>[Trips_Silver]</parent-name>
+            <remote-alias>End Station ID</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Silver_E6EE7B2649E049A188934312FC545A66]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>End Station Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[End Station Latitude (Trips_Silver)]</local-name>
+            <parent-name>[Trips_Silver]</parent-name>
+            <remote-alias>End Station Latitude</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Silver_E6EE7B2649E049A188934312FC545A66]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>End Station Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[End Station Longitude (Trips_Silver)]</local-name>
+            <parent-name>[Trips_Silver]</parent-name>
+            <remote-alias>End Station Longitude</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Silver_E6EE7B2649E049A188934312FC545A66]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>End Station Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[End Station Name (Trips_Silver)]</local-name>
+            <parent-name>[Trips_Silver]</parent-name>
+            <remote-alias>End Station Name</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>21845</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Silver_E6EE7B2649E049A188934312FC545A66]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Gender (Trips_Silver)]</local-name>
+            <parent-name>[Trips_Silver]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Silver_E6EE7B2649E049A188934312FC545A66]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Start Station ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Start Station ID (Trips_Silver)]</local-name>
+            <parent-name>[Trips_Silver]</parent-name>
+            <remote-alias>Start Station ID</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Silver_E6EE7B2649E049A188934312FC545A66]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Start Station Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Start Station Latitude (Trips_Silver)]</local-name>
+            <parent-name>[Trips_Silver]</parent-name>
+            <remote-alias>Start Station Latitude</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Silver_E6EE7B2649E049A188934312FC545A66]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Start Station Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Start Station Longitude (Trips_Silver)]</local-name>
+            <parent-name>[Trips_Silver]</parent-name>
+            <remote-alias>Start Station Longitude</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Silver_E6EE7B2649E049A188934312FC545A66]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Start Station Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Start Station Name (Trips_Silver)]</local-name>
+            <parent-name>[Trips_Silver]</parent-name>
+            <remote-alias>Start Station Name</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>21845</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Silver_E6EE7B2649E049A188934312FC545A66]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Start Time</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Start Time (Trips_Silver)]</local-name>
+            <parent-name>[Trips_Silver]</parent-name>
+            <remote-alias>Start Time</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>21845</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Silver_E6EE7B2649E049A188934312FC545A66]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stop Time</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Stop Time (Trips_Silver)]</local-name>
+            <parent-name>[Trips_Silver]</parent-name>
+            <remote-alias>Stop Time</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>21845</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Silver_E6EE7B2649E049A188934312FC545A66]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Trip Duration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Trip Duration (Trips_Silver)]</local-name>
+            <parent-name>[Trips_Silver]</parent-name>
+            <remote-alias>Trip Duration</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Silver_E6EE7B2649E049A188934312FC545A66]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Trip_Duration_in_min</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Trip_Duration_in_min (Trips_Silver)]</local-name>
+            <parent-name>[Trips_Silver]</parent-name>
+            <remote-alias>Trip_Duration_in_min</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Silver_E6EE7B2649E049A188934312FC545A66]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unnamed: 0</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Unnamed: 0 (Trips_Silver)]</local-name>
+            <parent-name>[Trips_Silver]</parent-name>
+            <remote-alias>Unnamed: 0</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Silver_E6EE7B2649E049A188934312FC545A66]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>User Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[User Type (Trips_Silver)]</local-name>
+            <parent-name>[Trips_Silver]</parent-name>
+            <remote-alias>User Type</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>21845</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Trips_Silver_E6EE7B2649E049A188934312FC545A66]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Bike ID (Trips Silver)' datatype='integer' name='[Bike ID (Trips_Silver)]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Bike ID]' role='dimension' type='ordinal' />
+      <column caption='Birth Year (Trips Silver)' datatype='integer' name='[Birth Year (Trips_Silver)]' role='dimension' type='quantitative' />
+      <column datatype='real' name='[Birth Year]' role='dimension' type='quantitative' />
+      <column caption='End Station ID (Trips Silver)' datatype='integer' name='[End Station ID (Trips_Silver)]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='End Station Latitude (Trips Silver)' datatype='real' name='[End Station Latitude (Trips_Silver)]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[End Station Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='End Station Longitude (Trips Silver)' datatype='real' name='[End Station Longitude (Trips_Silver)]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[End Station Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='End Station Name (Trips Silver)' datatype='string' name='[End Station Name (Trips_Silver)]' role='dimension' type='nominal' />
+      <column caption='Gender (Trips Silver)' datatype='integer' name='[Gender (Trips_Silver)]' role='measure' type='quantitative' />
+      <column caption='Start Station ID (Trips Silver)' datatype='integer' name='[Start Station ID (Trips_Silver)]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Start Station Latitude (Trips Silver)' datatype='real' name='[Start Station Latitude (Trips_Silver)]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Start Station Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Start Station Longitude (Trips Silver)' datatype='real' name='[Start Station Longitude (Trips_Silver)]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Start Station Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Start Station Name (Trips Silver)' datatype='string' name='[Start Station Name (Trips_Silver)]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Start Station Name]' role='dimension' type='nominal' />
+      <column caption='Start Time (Trips Silver)' datatype='string' name='[Start Time (Trips_Silver)]' role='dimension' type='nominal' />
+      <column caption='Stop Time (Trips Silver)' datatype='string' name='[Stop Time (Trips_Silver)]' role='dimension' type='nominal' />
+      <column caption='Trip Duration (Trips Silver)' datatype='integer' name='[Trip Duration (Trips_Silver)]' role='measure' type='quantitative' />
+      <column caption='Trip Duration in min (Trips Silver)' datatype='integer' name='[Trip_Duration_in_min (Trips_Silver)]' role='measure' type='quantitative' />
+      <column caption='Trip Duration in min' datatype='integer' name='[Trip_Duration_in_min]' role='measure' type='quantitative' />
+      <column caption='Unnamed: 0 (Trips Silver)' datatype='integer' name='[Unnamed: 0 (Trips_Silver)]' role='measure' type='quantitative' />
+      <column caption='User Type (Trips Silver)' datatype='string' name='[User Type (Trips_Silver)]' role='dimension' type='nominal' />
+      <column datatype='string' name='[User Type]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Trips' datatype='table' name='[__tableau_internal_object_id__].[Trips_EFCC27DA41EA4973BF784175449FED8A]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Trips_Gold_data' datatype='table' name='[__tableau_internal_object_id__].[Trips_Gold_data_9DDE460B154A4259B5D63A52A71FB0A2]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Trips_Silver' datatype='table' name='[__tableau_internal_object_id__].[Trips_Silver_E6EE7B2649E049A188934312FC545A66]' role='measure' type='quantitative' />
+      <column caption='_id (Trips Gold data)' datatype='string' name='[_id (Trips_Gold_data)]' role='dimension' type='nominal' />
+      <column caption='_id (Trips Silver)' datatype='string' name='[_id (Trips_Silver)]' role='dimension' type='nominal' />
+      <column caption='_Id' datatype='string' name='[_id]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[data.Bike ID]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[data.Day of Week]' role='dimension' type='nominal' />
+      <column datatype='string' name='[data.End Station Name]' role='dimension' type='nominal' />
+      <column datatype='string' name='[data.Start Station Name]' role='dimension' type='nominal' />
+      <column caption='Data Idx' datatype='integer' name='[data_idx]' role='measure' type='quantitative' />
+      <column-instance column='[Birth Year (Trips_Silver)]' derivation='None' name='[none:Birth Year (Trips_Silver):ok]' pivot='key' type='ordinal' />
+      <column-instance column='[User Type]' derivation='None' name='[none:User Type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[data.End Station Name]' derivation='None' name='[none:data.End Station Name:nk]' pivot='key' type='nominal' />
+      <column-instance column='[data.Start Station Name]' derivation='None' name='[none:data.Start Station Name:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Birth Year (Trips Silver))' hidden='true' name='[Action (Birth Year (Trips Silver))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Birth Year (Trips_Silver):ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (End Station Name (Trips Silver),Start Station Name (Trips Silver))' hidden='true' name='[Action (End Station Name (Trips Silver),Start Station Name (Trips Silver))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[End Station Name (Trips_Silver)]' />
+          <groupfilter function='level-members' level='[Start Station Name (Trips_Silver)]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Start Station Name)' hidden='true' name='[Action (Start Station Name)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Start Station Name]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Start Station Name,User Type)' hidden='true' name='[Action (Start Station Name,User Type)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Start Station Name]' />
+          <groupfilter function='level-members' level='[User Type]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (data.Day of Week)' hidden='true' name='[Action (data.Day of Week)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[data.Day of Week]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (data.End Station Name,data.Start Station Name)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:data.End Station Name:nk]' />
+          <groupfilter function='level-members' level='[none:data.Start Station Name:nk]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:User Type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Customer&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Subscriber&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Trips' id='Trips_EFCC27DA41EA4973BF784175449FED8A'>
+            <properties context=''>
+              <relation connection='mongodb.1mjb27a0e7yz8v1eg88tq13jip0b' name='Trips' table='[Trips]' type='table' />
+            </properties>
+          </object>
+          <object caption='Trips_Gold_data' id='Trips_Gold_data_9DDE460B154A4259B5D63A52A71FB0A2'>
+            <properties context=''>
+              <relation connection='mongodb.1mjb27a0e7yz8v1eg88tq13jip0b' name='Trips_Gold_data' table='[Trips_Gold_data]' type='table' />
+            </properties>
+          </object>
+          <object caption='Trips_Silver' id='Trips_Silver_E6EE7B2649E049A188934312FC545A66'>
+            <properties context=''>
+              <relation connection='mongodb.1mjb27a0e7yz8v1eg88tq13jip0b' name='Trips_Silver' table='[Trips_Silver]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[_id]' />
+              <expression op='[_id (Trips_Gold_data)]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='Trips_EFCC27DA41EA4973BF784175449FED8A' unique-key='true' />
+            <second-end-point object-id='Trips_Gold_data_9DDE460B154A4259B5D63A52A71FB0A2' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[_id]' />
+              <expression op='[_id (Trips_Silver)]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='Trips_EFCC27DA41EA4973BF784175449FED8A' unique-key='true' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='Trips_Silver_E6EE7B2649E049A188934312FC545A66' unique-key='true' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_C71C47F8FDFC4C9B9682F0AB0AF5B25A]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 3 (2)' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_5FB21916D6BE46878F5D657D4A9632E2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 2' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_6A19581D807C4377B4EBC618DC9F609D]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 3' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4_6D3A56A13F874DCE8B2B0BBD3A4F28FB]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='Sheet 6' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+    <action caption='Filter 5 (generated)' name='[Action5_8254BDC75378432D966C2A4C5C4E2D84]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='Sheet 4' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+    <action caption='Filter 6 (generated)' name='[Action6_600A953A452943A18FAAB66E0166D4EA]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='Sheet 5' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+    <action caption='Filter 7 (generated)' name='[Action8_6805CEAACA7D49E1BA671694363076F0]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 3' type='sheet' worksheet='Sheet 9' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 3' />
+      </command>
+    </action>
+    <action caption='Filter 8 (generated)' name='[Action8_C0D58F01EB50438598E9D8D4083D8B97]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 3' type='sheet' worksheet='Sheet 8' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 3' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Trips by User Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Trips_Gold_data (BikeShareDB)' name='federated.01zw1ae006zsyy12k2x9l0cx1eeb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01zw1ae006zsyy12k2x9l0cx1eeb'>
+            <column datatype='integer' name='[data.Total Trips]' role='measure' type='quantitative' />
+            <column datatype='string' name='[data.User Type]' role='dimension' type='nominal' />
+            <column-instance column='[data.User Type]' derivation='None' name='[none:data.User Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[data.Total Trips]' derivation='Sum' name='[sum:data.Total Trips:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:data.User Type:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:data.User Type:nk]' />
+              <groupfilter function='member' level='[none:data.User Type:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:data.User Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:data.User Type:nk]</rows>
+        <cols>[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[sum:data.Total Trips:qk]</cols>
+      </table>
+      <simple-id uuid='{89E5E986-1DD6-4E6C-B779-8F80E99F9767}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Trips by Bike ID</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Trips_Gold_data (BikeShareDB)' name='federated.01zw1ae006zsyy12k2x9l0cx1eeb' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.01zw1ae006zsyy12k2x9l0cx1eeb'>
+            <column datatype='integer' name='[Bike ID]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Trip Duration]' role='measure' type='quantitative' />
+            <column datatype='string' name='[User Type]' role='dimension' type='nominal' />
+            <column-instance column='[Bike ID]' derivation='None' name='[none:Bike ID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[User Type]' derivation='None' name='[none:User Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Trip Duration]' derivation='Sum' name='[sum:Trip Duration:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:User Type:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[sum:Trip Duration:qk]</rows>
+        <cols>[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:Bike ID:ok]</cols>
+      </table>
+      <simple-id uuid='{D4EEA207-CC2B-4E80-AD1D-374EF8F6DC5C}' />
+    </worksheet>
+    <worksheet name='Sheet 3 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Trips_Gold_data (BikeShareDB)' name='federated.01zw1ae006zsyy12k2x9l0cx1eeb' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.01zw1ae006zsyy12k2x9l0cx1eeb'>
+            <column datatype='integer' name='[Bike ID]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Trip Duration]' role='measure' type='quantitative' />
+            <column datatype='string' name='[User Type]' role='dimension' type='nominal' />
+            <column-instance column='[Bike ID]' derivation='None' name='[none:Bike ID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[User Type]' derivation='None' name='[none:User Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Trip Duration]' derivation='Sum' name='[sum:Trip Duration:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[sum:Trip Duration:qk]' />
+              <text column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:User Type:nk]' />
+              <text column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:Bike ID:ok]' />
+              <color column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:User Type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{319AE058-E010-4456-930D-C031B1EBDB38}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Trip Duration By Station</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Trips_Gold_data (BikeShareDB)' name='federated.01zw1ae006zsyy12k2x9l0cx1eeb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01zw1ae006zsyy12k2x9l0cx1eeb'>
+            <column caption='Birth Year (Trips Silver)' datatype='integer' name='[Birth Year (Trips_Silver)]' role='dimension' type='quantitative' />
+            <column caption='End Station Name (Trips Silver)' datatype='string' name='[End Station Name (Trips_Silver)]' role='dimension' type='nominal' />
+            <column caption='Start Station Name (Trips Silver)' datatype='string' name='[Start Station Name (Trips_Silver)]' role='dimension' type='nominal' />
+            <column caption='Trip Duration in min (Trips Silver)' datatype='integer' name='[Trip_Duration_in_min (Trips_Silver)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[data.Day of Week]' role='dimension' type='nominal' />
+            <column-instance column='[Birth Year (Trips_Silver)]' derivation='None' name='[none:Birth Year (Trips_Silver):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[End Station Name (Trips_Silver)]' derivation='None' name='[none:End Station Name (Trips_Silver):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Start Station Name (Trips_Silver)]' derivation='None' name='[none:Start Station Name (Trips_Silver):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Trip_Duration_in_min (Trips_Silver)]' derivation='Sum' name='[sum:Trip_Duration_in_min (Trips_Silver):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[Action (Birth Year (Trips Silver))]'>
+            <groupfilter function='level-members' level='[none:Birth Year (Trips_Silver):ok]' user:ui-action-filter='[Action6_600A953A452943A18FAAB66E0166D4EA]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[Action (data.Day of Week)]'>
+            <groupfilter function='level-members' level='[data.Day of Week]' user:ui-action-filter='[Action4_6D3A56A13F874DCE8B2B0BBD3A4F28FB]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:End Station Name (Trips_Silver):nk]'>
+            <groupfilter function='level-members' level='[none:End Station Name (Trips_Silver):nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <natural-sort column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:Start Station Name (Trips_Silver):nk]' direction='DESC' />
+          <slices>
+            <column>[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:End Station Name (Trips_Silver):nk]</column>
+            <column>[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[Action (data.Day of Week)]</column>
+            <column>[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[Action (Birth Year (Trips Silver))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[sum:Trip_Duration_in_min (Trips_Silver):qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[sum:Trip_Duration_in_min (Trips_Silver):qk]' />
+              <text column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[sum:Trip_Duration_in_min (Trips_Silver):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:Start Station Name (Trips_Silver):nk]</rows>
+        <cols>[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:End Station Name (Trips_Silver):nk]</cols>
+      </table>
+      <simple-id uuid='{87F9A258-29F1-4E8C-90D5-18AB5652D00A}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Trips By BIrth Year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Trips_Gold_data (BikeShareDB)' name='federated.01zw1ae006zsyy12k2x9l0cx1eeb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01zw1ae006zsyy12k2x9l0cx1eeb'>
+            <column caption='Birth Year (Trips Silver)' datatype='integer' name='[Birth Year (Trips_Silver)]' role='dimension' type='quantitative' />
+            <column caption='Trip Duration in min (Trips Silver)' datatype='integer' name='[Trip_Duration_in_min (Trips_Silver)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[data.Day of Week]' role='dimension' type='nominal' />
+            <column-instance column='[Birth Year (Trips_Silver)]' derivation='None' name='[none:Birth Year (Trips_Silver):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Trip_Duration_in_min (Trips_Silver)]' derivation='Sum' name='[sum:Trip_Duration_in_min (Trips_Silver):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[Action (data.Day of Week)]'>
+            <groupfilter function='level-members' level='[data.Day of Week]' user:ui-action-filter='[Action4_6D3A56A13F874DCE8B2B0BBD3A4F28FB]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:Birth Year (Trips_Silver):qk]' included-values='in-range'>
+            <min>1958</min>
+            <max>2000</max>
+          </filter>
+          <slices>
+            <column>[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:Birth Year (Trips_Silver):qk]</column>
+            <column>[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[Action (data.Day of Week)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+        </panes>
+        <rows>[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[sum:Trip_Duration_in_min (Trips_Silver):qk]</rows>
+        <cols>[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:Birth Year (Trips_Silver):qk]</cols>
+      </table>
+      <simple-id uuid='{DBCD1E40-2480-4D6A-B0FB-C97E15A08982}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Trips By Days of the week</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Trips_Gold_data (BikeShareDB)' name='federated.01zw1ae006zsyy12k2x9l0cx1eeb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01zw1ae006zsyy12k2x9l0cx1eeb'>
+            <column caption='Birth Year (Trips Silver)' datatype='integer' name='[Birth Year (Trips_Silver)]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[data.Day of Week]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[data.Total Trips]' role='measure' type='quantitative' />
+            <column-instance column='[Birth Year (Trips_Silver)]' derivation='None' name='[none:Birth Year (Trips_Silver):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[data.Day of Week]' derivation='None' name='[none:data.Day of Week:nk]' pivot='key' type='nominal' />
+            <column-instance column='[data.Total Trips]' derivation='Sum' name='[sum:data.Total Trips:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[Action (Birth Year (Trips Silver))]'>
+            <groupfilter function='level-members' level='[none:Birth Year (Trips_Silver):ok]' user:ui-action-filter='[Action6_600A953A452943A18FAAB66E0166D4EA]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:data.Day of Week:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:data.Day of Week:nk]' />
+              <groupfilter function='member' level='[none:data.Day of Week:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:data.Day of Week:nk]</column>
+            <column>[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[Action (Birth Year (Trips Silver))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='139' />
+            <format attr='height' field='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:data.Day of Week:nk]' value='32' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[sum:data.Total Trips:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[sum:data.Total Trips:qk]' value=''>
+              <formatted-text />
+            </format>
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:data.Day of Week:nk]' value=''>
+              <formatted-text />
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[sum:data.Total Trips:qk]' />
+              <text column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[sum:data.Total Trips:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:data.Day of Week:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{6ACB4BBD-5F54-4AB0-9AEA-09D48B060B5C}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Trips_Gold_data (BikeShareDB)' name='federated.01zw1ae006zsyy12k2x9l0cx1eeb' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.01zw1ae006zsyy12k2x9l0cx1eeb'>
+            <column aggregation='Avg' datatype='real' name='[End Station Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' datatype='real' name='[End Station Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column datatype='string' name='[End Station Name]' role='dimension' type='nominal' />
+            <column-instance column='[End Station Latitude]' derivation='None' name='[none:End Station Latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[End Station Longitude]' derivation='None' name='[none:End Station Longitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[End Station Name]' derivation='None' name='[none:End Station Name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:End Station Longitude:qk]' field-type='quantitative' max='-8219049.8286227239' min='-8259260.4154702369' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:End Station Latitude:qk]' field-type='quantitative' max='4980622.3922496075' min='4960671.6464675087' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:End Station Name:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:End Station Latitude:qk]</rows>
+        <cols>[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:End Station Longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{CE152C1D-F18F-4B59-A0D4-9F6993EBD33A}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Trips_Gold_data (BikeShareDB)' name='federated.01zw1ae006zsyy12k2x9l0cx1eeb' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.01zw1ae006zsyy12k2x9l0cx1eeb'>
+            <column aggregation='Avg' datatype='real' name='[Start Station Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' datatype='real' name='[Start Station Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column datatype='string' name='[Start Station Name]' role='dimension' type='nominal' />
+            <column caption='Trip Duration in min' datatype='integer' name='[Trip_Duration_in_min]' role='measure' type='quantitative' />
+            <column datatype='string' name='[User Type]' role='dimension' type='nominal' />
+            <column-instance column='[Start Station Latitude]' derivation='None' name='[none:Start Station Latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Start Station Longitude]' derivation='None' name='[none:Start Station Longitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Start Station Name]' derivation='None' name='[none:Start Station Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[User Type]' derivation='None' name='[none:User Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Trip_Duration_in_min]' derivation='Sum' name='[sum:Trip_Duration_in_min:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[Action (Start Station Name)]'>
+            <groupfilter function='level-members' level='[Start Station Name]' user:ui-action-filter='[Action7_CAEF587AC2BD40A8A2C042223A8C8687]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[Action (Start Station Name,User Type)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action8_6805CEAACA7D49E1BA671694363076F0]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Start Station Name]' />
+              <groupfilter function='level-members' level='[User Type]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[Action (Start Station Name)]</column>
+            <column>[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[Action (Start Station Name,User Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[Longitude (generated)]' field-type='quantitative' max='-8232011.0728272023' min='-8252420.4120825604' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[Latitude (generated)]' field-type='quantitative' max='4976564.1134910341' min='4964792.6832074448' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <lod column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:Start Station Name:nk]' />
+              <lod column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:Start Station Latitude:qk]' />
+              <lod column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:Start Station Longitude:qk]' />
+              <size column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[sum:Trip_Duration_in_min:qk]' />
+              <geometry column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[Geometry (generated)]' />
+              <color column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:User Type:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[Latitude (generated)]</rows>
+        <cols>[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{4D5BE9C4-CF65-450F-A589-4B3549673610}' />
+    </worksheet>
+    <worksheet name='Sheet 9'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Trips_Gold_data (BikeShareDB)' name='federated.01zw1ae006zsyy12k2x9l0cx1eeb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01zw1ae006zsyy12k2x9l0cx1eeb'>
+            <column datatype='string' name='[Start Station Name]' role='dimension' type='nominal' />
+            <column caption='Trip Duration in min' datatype='integer' name='[Trip_Duration_in_min]' role='measure' type='quantitative' />
+            <column datatype='string' name='[User Type]' role='dimension' type='nominal' />
+            <column-instance column='[Start Station Name]' derivation='None' name='[none:Start Station Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[User Type]' derivation='None' name='[none:User Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Trip_Duration_in_min]' derivation='Sum' name='[sum:Trip_Duration_in_min:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:Start Station Name:nk]'>
+            <groupfilter function='level-members' level='[none:Start Station Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:Start Station Name:nk]' direction='DESC' using='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[sum:Trip_Duration_in_min:qk]' />
+          <slices>
+            <column>[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:Start Station Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='157' />
+            <format attr='width' field='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:User Type:nk]' value='128' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[sum:Trip_Duration_in_min:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[sum:Trip_Duration_in_min:qk]' />
+              <text column='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[sum:Trip_Duration_in_min:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows total='true'>[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:Start Station Name:nk]</rows>
+        <cols total='true'>[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:User Type:nk]</cols>
+      </table>
+      <simple-id uuid='{1E9CB1B0-2EBD-40BB-97FC-CA5272BD3600}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1300' minheight='800' minwidth='1300' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='8' param='horz' type-v2='layout-flow' w='98770' x='615' y='1000'>
+            <zone h='98000' id='6' type-v2='layout-basic' w='86462' x='615' y='1000'>
+              <zone h='29500' id='3' name='Sheet 2' w='43231' x='43846' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='98000' id='5' name='Sheet 3' w='43231' x='615' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='68500' id='10' name='Sheet 3 (2)' w='43231' x='43846' y='30500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='7' is-fixed='true' param='vert' type-v2='layout-flow' w='12308' x='87077' y='1000'>
+              <zone h='9000' id='9' name='Sheet 3' pane-specification-id='0' param='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:User Type:nk]' type-v2='color' w='12308' x='87077' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='900' minheight='900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='17' param='vert' type-v2='layout-flow' w='98770' x='615' y='1000'>
+                <zone fixed-size='280' h='98000' id='5' is-fixed='true' name='Sheet 3' w='43231' x='615' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9000' id='9' name='Sheet 3' pane-specification-id='0' param='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:User Type:nk]' type-v2='color' w='12308' x='87077' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='228' h='29500' id='3' is-fixed='true' name='Sheet 2' w='43231' x='43846' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='68500' id='10' is-fixed='true' name='Sheet 3 (2)' w='43231' x='43846' y='30500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{39941FD2-100B-4F7B-89BE-D9FF4D9568E9}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='800' maxwidth='1300' minheight='800' minwidth='1300' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Trips_Gold_data (BikeShareDB)' name='federated.01zw1ae006zsyy12k2x9l0cx1eeb' />
+      </datasources>
+      <datasource-dependencies datasource='federated.01zw1ae006zsyy12k2x9l0cx1eeb'>
+        <column caption='Birth Year (Trips Silver)' datatype='integer' name='[Birth Year (Trips_Silver)]' role='dimension' type='quantitative' />
+        <column caption='End Station Name (Trips Silver)' datatype='string' name='[End Station Name (Trips_Silver)]' role='dimension' type='nominal' />
+        <column datatype='string' name='[data.Day of Week]' role='dimension' type='nominal' />
+        <column-instance column='[Birth Year (Trips_Silver)]' derivation='None' name='[none:Birth Year (Trips_Silver):qk]' pivot='key' type='quantitative' />
+        <column-instance column='[End Station Name (Trips_Silver)]' derivation='None' name='[none:End Station Name (Trips_Silver):nk]' pivot='key' type='nominal' />
+        <column-instance column='[data.Day of Week]' derivation='None' name='[none:data.Day of Week:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98770' x='615' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='86462' x='615' y='1000'>
+              <zone h='98000' id='3' name='Sheet 4' w='43231' x='615' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='10' name='Sheet 5' w='43231' x='43846' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='12' name='Sheet 6' w='43231' x='43846' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='12308' x='87077' y='1000'>
+              <zone h='49375' id='8' name='Sheet 4' param='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:End Station Name (Trips_Silver):nk]' type-v2='filter' w='12308' x='87077' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9125' id='11' name='Sheet 5' param='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:Birth Year (Trips_Silver):qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='12308' x='87077' y='50375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='30375' id='13' name='Sheet 6' param='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:data.Day of Week:nk]' type-v2='filter' w='12308' x='87077' y='59500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9125' id='14' name='Sheet 6' pane-specification-id='0' param='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[sum:data.Total Trips:qk]' type-v2='color' w='12308' x='87077' y='89875'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1150' minheight='1150' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='17' param='vert' type-v2='layout-flow' w='98770' x='615' y='1000'>
+                <zone h='49375' id='8' mode='checkdropdown' name='Sheet 4' param='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:End Station Name (Trips_Silver):nk]' type-v2='filter' w='12308' x='87077' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Sheet 4' w='43231' x='615' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='30375' id='13' mode='checkdropdown' name='Sheet 6' param='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:data.Day of Week:nk]' type-v2='filter' w='12308' x='87077' y='59500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='12' is-fixed='true' name='Sheet 6' w='43231' x='43846' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9125' id='14' name='Sheet 6' pane-specification-id='0' param='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[sum:data.Total Trips:qk]' type-v2='color' w='12308' x='87077' y='89875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9125' id='11' name='Sheet 5' param='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:Birth Year (Trips_Silver):qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='12308' x='87077' y='50375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='10' is-fixed='true' name='Sheet 5' w='43231' x='43846' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{1C263220-FEEF-4764-A371-A08AA1BDAAC7}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 3'>
+      <style />
+      <size maxheight='800' maxwidth='1300' minheight='800' minwidth='1300' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Trips_Gold_data (BikeShareDB)' name='federated.01zw1ae006zsyy12k2x9l0cx1eeb' />
+      </datasources>
+      <datasource-dependencies datasource='federated.01zw1ae006zsyy12k2x9l0cx1eeb'>
+        <column datatype='string' name='[Start Station Name]' role='dimension' type='nominal' />
+        <column-instance column='[Start Station Name]' derivation='None' name='[none:Start Station Name:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98770' x='615' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='86462' x='615' y='1000'>
+              <zone h='98000' id='3' name='Sheet 8' w='43231' x='615' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='98000' id='9' name='Sheet 9' w='43231' x='43846' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='12308' x='87077' y='1000'>
+              <zone h='98000' id='10' name='Sheet 9' param='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:Start Station Name:nk]' type-v2='filter' w='12308' x='87077' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='13' param='vert' type-v2='layout-flow' w='98770' x='615' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Sheet 8' w='43231' x='615' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='98000' id='10' mode='checkdropdown' name='Sheet 9' param='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:Start Station Name:nk]' type-v2='filter' w='12308' x='87077' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98000' id='9' is-fixed='true' name='Sheet 9' w='43231' x='43846' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{AFA1B914-8DE3-4059-8E0F-DDC46D308670}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 2' />
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3 (2)' />
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{5E9C19E7-7FE8-4DA5-A467-FE6C15D156DF}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Sheet 4' />
+        <viewpoint name='Sheet 5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 6' />
+      </viewpoints>
+      <active id='10' />
+      <simple-id uuid='{32BCF977-B68C-4D78-908B-BE2BA86690E9}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 3'>
+      <viewpoints>
+        <viewpoint name='Sheet 8'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 9' />
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{A8BC18BA-C512-456E-87C7-9A2395155C92}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{07F1E12C-D4F9-4AB8-ADF1-51C2ADB8F50B}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:User Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0FE312D3-F66A-4021-99E7-B3CF668B1201}' />
+    </window>
+    <window class='worksheet' name='Sheet 3 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:User Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BB261AD9-1E42-4A35-944C-6ABDEBD77539}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:End Station Name (Trips_Silver):nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[sum:Trip_Duration_in_min (Trips_Silver):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E305526B-FBAA-4482-93EE-C159CE6BEEC2}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:Birth Year (Trips_Silver):qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1D809ACD-7872-4B9E-9593-BCD22E50C324}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[sum:Trip_Duration_in_min:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:User Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{32D45E77-607B-45E9-A288-786381B54CC3}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:data.Day of Week:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[sum:data.Total Trips:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CCBDBB80-2B88-4944-9E99-DEBE652C4137}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{77CE9806-0B8B-4D1A-AE97-DE30ADC26A00}' />
+    </window>
+    <window class='worksheet' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[none:Start Station Name:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.01zw1ae006zsyy12k2x9l0cx1eeb].[sum:Trip_Duration_in_min:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5C792C4B-7230-46B6-B65E-B42AD298FB80}' />
+    </window>
+  </windows>
+</workbook>

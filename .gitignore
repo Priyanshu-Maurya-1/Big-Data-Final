@@ -1,0 +1,51 @@
+# Ignore Python cache and environment files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+*.env
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore data files
+*.csv
+*.json
+
+# Specific files to ignore
+config.py
+bike_trips.json
+
+# Ignore specific folders
+.ipynb_checkpoints/
+Data/
+
+# Ignore logs and debug files
+*.log
+*.out
+*.err
+logs/
+
+# Ignore compiled code and binaries
+*.class
+*.exe
+*.dll
+*.so
+*.o
+*.a
+*.out
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore temporary files and backups
+*.tmp
+*.bak
+*.swp
+*.swo
+*.~*
